@@ -2,14 +2,12 @@ from random import shuffle
 
 
 def cria_pecas():
-    peaces = []
+    pieces = []
 
     for i in range(7):
-        for j in range(6, -1 + i, - 1):
-            peaces.append([i, j])
+        for j in range(i, 7):
+            pieces.append([i, j])
 
-    shuffle(peaces)
-    return peaces
+    shuffle(pieces)
 
-
-print(cria_pecas())
+    return pieces
