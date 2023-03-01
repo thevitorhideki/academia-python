@@ -1,0 +1,5 @@
+def meta_atingida (lim_rec, lim_jus, prop_rec, prop_jus):
+    if prop_rec < lim_rec and prop_jus < lim_jus:
+        return True
+    else:
+        return False
