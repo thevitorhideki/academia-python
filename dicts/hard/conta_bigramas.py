@@ -8,6 +8,3 @@ def conta_bigramas(name: str) -> dict:
             count[name[i:i+2]] += 1
 
     return count
-
-
-print(conta_bigramas('banana nanica'))
