@@ -1,0 +1,7 @@
+{
+    "produtos": [
+        { "produto": "açúcar", "quantidade": 4, "valor": 3.22 },
+        { "produto": "arroz", "quantidade": 1, "valor": 10.34 },
+        { "produto": "feijão", "quantidade": 2, "valor": 9.55 }
+    ]
+}
