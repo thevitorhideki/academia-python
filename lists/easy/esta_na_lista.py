@@ -1,5 +1,2 @@
 def esta_na_lista(country, countries):
-    for i in countries:
-        if country in i:
-            return True
-    return False
+    return True if [x for x in countries if country in x] else False
