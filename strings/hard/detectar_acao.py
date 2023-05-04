@@ -11,13 +11,14 @@ def detectar_acao(users: dict, stop_words: list) -> dict:
             feedback = [x for x in feedback if x not in stop_words]
 
             # Verifica se a palavra termina com ar, er, ir ou or
-            for i in range(len(feedback)):
-                for end in pattern:
-                    if i == len(feedback) - 1:
-                        if feedback[i][-2:] == end:
-                            actions[name].append(feedback[i])
-                    elif feedback[i][-2:] == end:
-                        actions[name].append(
-                            ' '.join([feedback[i], feedback[i+1]]))
+            for i, value in enumerate(feedback):
+                # Verifica se a palavra é a ultima da string
+                if i == len(feedback) - 1:
+                    if value[-2:] in pattern:
+                        actions[name].append(value)
+                # Verifica se é um verbo
+                elif value[-2:] in pattern:
+                    actions[name].append(
+                        ' '.join([value, feedback[i+1]]))
 
     return actions
