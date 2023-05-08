@@ -13,6 +13,3 @@ def nomes_com_vogais(names: list) -> list:
             consonants += 1
 
     return [vowels, consonants]
-
-
-print(nomes_com_vogais(["André", "Carlos", "João", "Otavio", "Thiago"]))
