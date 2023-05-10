@@ -5,9 +5,8 @@ def formata_data(date: str, format: str) -> str:
     format_date = {}
 
     date_separator = re.search(r'[^0-9]', date).group()
-    format_separator = re.search(r'[^amd]', format).group()
     date = date.split(date_separator)
-    format = format.split(format_separator)
+    format = format.split(date_separator)
 
     for i in range(len(date)):
         format_date[format[i]] = int(date[i])
