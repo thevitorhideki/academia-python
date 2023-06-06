@@ -3,12 +3,13 @@ import re
 
 def predizer_lingua(languages: dict, text: str) -> dict:
     guess = {x: 0.0 for x in languages}
-
+    
     if len(text) == 0:
         guess['palpite'] = 'DESCONHECIDA'
+        return guess
     elif len(languages) == 0:
         return {'palpite': 'DESCONHECIDA'}
-
+    
     text = re.sub('[!?,;.:\)\}\]\(\[\{]', '', text).lower().split()
     one_percent = 1 / len(text)
 
