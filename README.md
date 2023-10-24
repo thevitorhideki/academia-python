@@ -1,4 +1,4 @@
-# Exercícios resolvidos da Academia Python das aulas de Design de Software
+# Exercícios resolvidos da Academia Python
 
 Esses exercícios foram resolvidos pelos alunos do primeiro semestre de Engenharia da Computação do Insper durante as aulas de Design de Software.
 Fiquem a vontade para contribuir com o nosso repositório, estamos abertos a outras respostas!
